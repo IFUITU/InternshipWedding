@@ -11,7 +11,7 @@ class TimeStampedModel(models.Model):
         abstract = True
 
 
-class City(TimeStampedModel):
+class City(models.Model):
     name = models.CharField(max_length=256, null=True, unique=True)
 
     class Meta:
