@@ -36,11 +36,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'whitenoise.runserver_nostatic', #heroku static files
     'client',
     "main",
     # 'search',
 
-    'whitenoise.runserver_nostatic', #heroku static files
     "rest_framework",
     'rest_framework.authtoken',
     'django_filters',
