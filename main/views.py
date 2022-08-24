@@ -56,14 +56,6 @@ class OrderViewSet(ModelViewSet):
         serializer.save(author=self.request.user)
 
 
-class OrderFilteredView(APIView):
-
-    def get(self, request, date=None, event_placeID=None):
-        query = Order.objects.filter(event_place=event_placeID).filter(date_wedding=date)
-        serialized = OrderSerializer(query, many=True, context={"request":request})
-        return Response(serialized.data)
-
-
 
 
 

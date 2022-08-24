@@ -65,16 +65,8 @@ class Order(TimeStampedModel):
     total_price = models.CharField(max_length=30, null=True)
     date_wedding = models.DateField()
     location_wedding = models.ForeignKey('City', on_delete=models.SET_NULL, null=True)
-    status = models.CharField(choices=STATUS, max_length=10, default=1)
+    status = models.CharField(choices=STATUS, max_length=10, default='1')
 
-    @property
-    def status(self):
-        if self.status == '1':
-            return "Preparing"
-        elif self.status == "2":
-            return "Ready"
-        elif self.status == "3":
-            return "Done"
 
 class System_Information(TimeStampedModel):
     phone = models.CharField(max_length=20, null=True, blank=True)
