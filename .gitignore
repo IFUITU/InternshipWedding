@@ -116,4 +116,5 @@ local_settings.py
 .env
 env
 img/
+img
 db.sqlite3
