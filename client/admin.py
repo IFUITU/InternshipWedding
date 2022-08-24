@@ -43,6 +43,10 @@ class UserAdmin(admin.ModelAdmin):
         cnt = Order.objects.filter(author=obj).count()
         return cnt
 
-
+    def save_model(self, request, obj, form, change) -> None:
+        print(change)
+        obj.set_password(obj.password)
+        print(obj.password)
+        return super().save_model(request, obj, form, change)
 
 admin.site.register(User, UserAdmin)
