@@ -117,4 +117,6 @@ local_settings.py
 env
 img/
 img
+media/
+media
 db.sqlite3
