@@ -39,12 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'client',
     "main",
-    'search',
+    # 'search',
 
     "rest_framework",
     'rest_framework.authtoken',
     'django_filters',
-    'django_elasticsearch_dsl', # new
+    # 'django_elasticsearch_dsl', # new
 
 
 ]
@@ -94,11 +94,11 @@ DATABASES = {
 # Elasticsearch
 # https://django-elasticsearch-dsl.readthedocs.io/en/latest/settings.html
 
-ELASTICSEARCH_DSL = {
-    'default': {
-        'hosts': 'localhost:9200'
-    },
-}
+# ELASTICSEARCH_DSL = {
+#     'default': {
+#         'hosts': 'localhost:9200'
+#     },
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators

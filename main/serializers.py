@@ -38,7 +38,7 @@ class ServiceSerializer(serializers.ModelSerializer):
 
 
 class OrderSerializer(serializers.ModelSerializer):
-    services = ServiceSerializer(many=True)
+    # services = ServiceSerializer(many=True)
     
     class Meta:
         model = Order
