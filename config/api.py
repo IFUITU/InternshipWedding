@@ -1,7 +1,12 @@
 from rest_framework.routers import DefaultRouter
 from main.views import SystemInfoViewSet, GalleryViewSet, CityViewSet, EventViewSet, EventPlaceViewSet, ServiceViewSet, OrderViewSet
 from client.views import UserViewSet
+
+
+
+
 router = DefaultRouter()
+
 
 #MAIN APP
 router.register("system-info", SystemInfoViewSet, basename='system-info')
