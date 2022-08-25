@@ -28,7 +28,6 @@ schema_view = get_schema_view(
         title="API",
         default_version='v1',
         description="Wedding project",
-        
         license=openapi.License(name="Awesome IP"),
     ),
     public=True,
