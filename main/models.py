@@ -68,6 +68,7 @@ class Order(TimeStampedModel):
     status = models.CharField(choices=STATUS, max_length=10, default='1')
 
 
+
 class System_Information(TimeStampedModel):
     phone = models.CharField(max_length=20, null=True, blank=True)
     email = models.EmailField(blank=True, null=True)
